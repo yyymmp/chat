@@ -15,7 +15,7 @@ type Processor struct {
 
 //请求分发
 //根据接受到的消息类型返回消息
-func (this *Processor) ServerProcessMes(mess *message.Message) (err error) {
+func (this *Processor)  ServerProcessMes(mess *message.Message) (err error) {
 	switch mess.Type {
 	//接受的消息类型是登录消息
 	case message.LoginMesType:
